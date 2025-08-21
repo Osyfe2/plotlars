@@ -21,7 +21,8 @@ indexmap = "2.10.0"
 ordered-float = "5.0.0"
 plotly = "0.13.5"
 plotly_static = { version = "0.0.4", optional = true }
-polars = { version = "0.50.0", features = ["lazy", "dtype-categorical"] }
+polars = { version = "0.50", default-features = false, features = ["dtype-slim", "lazy", "pivot", "docs", "zip_with", "fmt_no_tty", "dtype-categorical"] }
+polars-io = { version = "0.50", default-features = false, features = ["csv"] }
 serde = "1.0.219"
 serde_json = "1.0.142"
 
